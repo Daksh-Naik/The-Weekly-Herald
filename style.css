@@ -1,0 +1,28 @@
+*{ margin:0px; padding: 0px; box-sizing: border-box; transition: 0.3s; }
+html { scroll-behavior: smooth; }
+body { user-select: none; background-color: rgb(2, 20, 49); color:white; font-family: 'Trebuchet MS'; }
+.navbar-title::before { content:attr(title); } .navbar-title .after { color: red;  } .media::before { content: "Click "; }
+p { margin: 10px 0px 10px 0px; } a { text-decoration: underline 0.5px rgb(255, 250, 182); color: rgb(255, 215, 0); }
+a:hover { color: rgb(255, 242, 167); text-decoration: none; }
+dl { margin: 40px 20px 40px 20px; } dt { margin: 0px 0px 20px 20px; font-size: 18px; font-weight: 900; }
+code { padding: 1px 3px 1px 3px; background-color: rgb(255, 242, 167); color: black; font-weight: bolder; border-radius: 1px; font-size: 15px; }
+code:hover { background-color: black; color: rgb(255, 242, 167) } #hed { display: none; }
+.scroller { z-index: 99; position: fixed; bottom: 0px; right: 0px; cursor: pointer; width: 45px; height: 30px; border-radius: 1px; background: url('images/spr/top.png'); bottom: -50px; right: 20px; transition: 0.5s ease;}
+.reveal{position: relative; transform: translateY(100px); opacity: 0; transition: all 0.7s ease;}
+.reveal.active{ transform: translateY(0px); opacity: 1; }
+.log {  margin: 50px 20px 50px 20px; text-align: center; text-shadow: 5px 3px 3px rgba(0, 0, 0, 0.800); }
+.warn { display: none; margin: 20px 5px 20px 5px; color: lightcoral; }
+.navbar { position: fixed; top: 0px; width:100%; background-color: rgba(2, 21, 51, 0.300); display: flex; justify-content: space-between; z-index: 99; }
+.navbar:hover { background-color: rgba(0, 0, 0, 0.500); }
+.navbar-title { padding: 20px 50px 20px 20px; left: 10px; background-color: rgba(0, 10, 29, 0.800); letter-spacing: 1px; width: fit-content;
+    border-radius: 0px 0px 100px 0px; text-shadow: 5px 3px 3px rgb(0, 0, 0); transition: 0.3s; }
+.navbar-title:hover { letter-spacing: 2px; background-color: rgba(0, 10, 29, 0.950); }
+.navbar-snack { padding: 20px 20px 20px 50px; right: 10px; align-content: right;     background-color: rgba(0, 10, 29, 0.600);
+    border-radius: 0px 0px 0px 100px; height: fit-content; text-shadow: 3px 3px 5px rgb(0, 0, 0); }
+.footer { margin: 50px 0px 0px 0px; padding: 40px; display: flex; justify-content: space-around; background: linear-gradient(to bottom, rgb(2, 20, 49) 0%, rgb(0, 0, 0) 50%); }
+.footer a { text-decoration: none; } .credits { padding: 10px; white-space: pre-line; } .advert:not(a) {  text-align: right;  white-space: pre-line; }
+.footer-advert { margin: 20px 0px 20px 0px; padding: 10px 20px 10px 20px; font-weight: 900; color: black; border-radius: 10px; }
+.fader-anim { -webkit-animation: fadein 1s; -moz-animation: fadein 1s;  -ms-animation: fadein 1s;  -o-animation: fadein 1s;  animation: fadein 1s; }
+@media only screen and (max-width: 530px) { .navbar-snack { display: none; } .footer { flex-direction: column; white-space: normal; } }
+@keyframes fadein { from { opacity: 0; } to { opacity: 1; } } @-moz-keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+@-webkit-keyframes fadein { from { opacity: 0; } to { opacity: 1; } } @-ms-keyframes fadein { from { opacity: 0; } to   { opacity: 1; } } @-o-keyframes fadein { from { opacity: 0; } to { opacity: 1; } }

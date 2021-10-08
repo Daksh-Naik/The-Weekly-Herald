@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <meta name="description" content="The Weekly Herald - Webpage - Preview | SNACK EXPO | Hosted by Github Pages | Made by Daksh Naik" />
+    <meta name="author" content="Daksh Naik" />
+    <meta name="page-topic" content="The Weekly Herald - Webpage - Preview | SNACK EXPO |" />
+    <meta name="topic" content="The Weekly Herald - Webpage - Preview | SNACK EXPO | "/>
+    <meta property="og:title" content="The Weekly Herald - Webpage - Preview | SNACK EXPO "/>
+    <meta property="og:description" content="The Weekly Herald - Webpage - Preview | SNACK EXPO | Hosted by : Github-Pages."/>
+    
+    <meta property="og:image" content="images/thumbnail.png"/>
+    <meta property="og:image:width" content="600"/>
+    <meta property="og:image:height" content="350"/>
+        
+    <meta name="description" content="The Weekly Herald - Webpage - Preview | SNACK EXPO |  Hosted by Github Pages | Made by Daksh Naik">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/introd.png">
+    <title>The Weekly Herald - Webpage Preview</title>
+
+    <style type="text/css">
+        .introd {  padding: 40px; margin: 100px 0px 0px 0px; }
+        .prev {  margin: 20px; }
+         @media only screen and (max-width:705px) { .warn { display: block; } }
+    </style>
+</head>
+<body class="fader-anim">
+    <div class="navbar">
+        <h1 class="navbar-title" id="title"></h1>
+        <h4 class="navbar-snack"><a 
+            href="https://expo.dev" 
+            target="_blank" 
+            rel="norefferer"
+            style="text-decoration: none;"
+            >SNACK EXPO</a></h4>
+    </div>
+    <span class="scroller" id="scroll"></span>
+    <div class="introd ">
+        <h2>Web-page Preview</h2>
+        <p class="warn">Sorry! The preview needs some more space! So, the output will be hidden. Switch over to a Lap / Desktop to view it.</p>
+        <p>Will only show source codes of <code>App.js</code>. Click / tap on the below area 
+        to view it on Expo online.</p>
+        <a href="index.html" id="close">Close this tab to return back.</a>
+    </div>
+    <div 
+    class="prev"
+    data-snack-id="@dakshdnaik/project-c59"
+    data-snack-platform="web" 
+    data-snack-preview="true" 
+    data-snack-theme="dark" 
+    style="
+        overflow:hidden;
+        background:#212121;
+        border:1px solid var(--color-border);
+        border-radius:4px;
+        height:500px;
+        width:85%
+        ">
+    <p id="para" style="text-align: center; cursor: pointer;">Click / tap to preview.</p>
+    </div>
+    <div class="introd">
+        <a href="index.html" id="close">Close this tab to return back.</a>
+    </div>
+    <section class="footer reveal">
+        <div class="credits">
+            <h4>Credits</h4>
+            <p>Website and App, 
+                designed and developed by 
+                <a href="https://daksh-naik.github.io/Profile" target="_blank" rel="norefferer">Daksh Naik</a>
+            </p>
+            <p>Site hosted by 
+                <a href="https://github.com/" target="_blank" rel="norefferer">Github - Pages</a>
+            </p>
+            <p>App articles being updated
+                <strong>every week.</strong>
+            </p>
+            <p>Latest website update : 
+                <cite>10th Oct, 2021</cite>
+            </p>
+            <p>Latest App update : 
+                <cite>15th Oct, 2021</cite>
+            </p>
+        </div>
+        <div class="advert">
+            <h4>Thanks</h4>
+            <p>App developed on : 
+                <a href="https://expo.dev" target="_blank" rel="norefferrer">Snack Expo</a>
+                <br>
+                online web-editor. 
+                React Native in your browser.
+                <br>
+                Download Expo Go on :
+            </p>
+            <a class="footer-advert"
+                    href="https://itunes.apple.com/app/apple-store/id982107779" 
+                    target="_blank" 
+                    rel="norefferer"
+                    style="background-color: white;"
+                >AppStore</a>
+            <br>
+            <a class="footer-advert 1"
+                    href="https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www"
+                    target="_blank"
+                    rel="norefferer"
+                    style="background-color: greenyellow;"
+                >PlayStore</a>
+            <br>
+            <p>Site hosted by 
+                <a href="https://github.com/" target="_blank" rel="norefferer">Github - Pages</a>
+            </p>
+            <br>
+            <p>WHTJR - Project 59</p>
+        </div>
+    </section>
+    <section style="text-align: center; padding: 40px; background-color: black;">
+        <p>&#120123; 2021 - Designed by <a href="https://daksh-naik.github.io/Profile" target="_blank" rel="norefferer">Daksh Naik</a></p>
+        <div class="log">
+            <h1>The Weekly Herald</h1>
+        </div>
+    </section>
+
+
+</body>
+    <script type="text/javascript">
+        var paraEv = document.getElementById("para");
+        paraEv.onclick = () => {
+            var embed = document.createElement("script");
+                embed.type = "text/javascript";
+                embed.src = "https://snack.expo.dev/embed.js"; 
+                document.getElementsByTagName("head")[0].appendChild(embed);
+                paraEv.innerHTML = "Loading preview... Just a moment...";
+                setTimeout(function() {
+                    paraEv.style.display = "none";
+                }, 7000)
+            return false;
+        }
+    </script>
+    <script type="text/javascript">
+        var closeElem = document.getElementById("close");
+            closeElem.onclick = () => {
+                window.close();
+            }
+    </script>
+    <script type="text/javascript">
+        window.onscroll = function() { shrink(dob); }
+        var titleTe = document.getElementById('title');
+        var dob = window.matchMedia("(max-width: 700px)");
+        var scrollselec = document.getElementById('scroll');
+        titleTe.title = "The Weekly Herald";
+        function shrink(dob) {
+            if (document.body.scrollTop > 80 && dob.matches || document.documentElement.scrollTop > 80 && dob.matches) {
+                titleTe.title = 'T W H';
+            } else {
+                titleTe.title = 'The Weekly Herald';
+            }
+        }
+        function initscroll() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 60) {
+                scrollselec.style.display = "block";
+            } else {
+                scrollselec.style.display = "none";
+            }
+        }
+        scrollselec.onclick = () => {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        window.onscroll = () => { initscroll(); }
+        shrink(dob);
+    </script>
+    <script>
+        window.addEventListener('scroll', reveal);
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+            for (var i=0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 40;
+                if (revealtop < windowHeight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+            }
+        }
+    </script>
+</html>

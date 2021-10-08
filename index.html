@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <meta name="description" content="The Weekly Herald - Index | SNACK EXPO | Hosted by Github Pages | Made by Daksh Naik" />
+    <meta name="author" content="Daksh Naik" />
+    <meta name="page-topic" content="The Weekly Herald - Index | SNACK EXPO |" />
+    <meta name="topic" content="The Weekly Herald - Index | SNACK EXPO | "/>
+    <meta property="og:title" content="The Weekly Herald - Index | SNACK EXPO "/>
+    <meta property="og:description" content="The Weekly Herald - Index | SNACK EXPO | Hosted by : Github-Pages."/>
+    
+    <meta property="og:image" content="images/thumbnail.png"/>
+    <meta property="og:image:width" content="600"/>
+    <meta property="og:image:height" content="350"/>
+        
+    <meta name="description" content="The Weekly Herald - Index | SNACK EXPO |  Hosted by Github Pages | Made by Daksh Naik">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/introd.png">
+    <title>The Weekly Herald - Index</title>
+
+    <style type="text/css">
+        .introd-spr { margin: 0px 300px 0px 300px; width: 800px; height: 299px; background: url('images/introd.png') -10px 1px; }
+        .introduct { margin: 150px 0px 0px 0px; }
+        .introduct-info { margin: 20px 0px 20px 0px; padding: 40px; white-space: pre-line; 
+            background:linear-gradient(to left, rgb(2, 20, 49) 0%, rgb(6, 4, 31) 75%)}
+        .introduct-brief { margin: 40px 10px 10px 10px; padding: 40px; background-color: rgba(0, 0, 0, 0.300); }
+        .warn { display: block; margin: 20px; }
+
+        .snack-preview { margin: 50px 20px 20px 20px; background-color: black; }
+        .preview-getaway { text-decoration: none; text-align: center; font-weight: 900; font-size: 19px;
+            padding: 20px; margin: 20px; border-radius: 30px; background-color: rgba(0, 0, 0, 0.2);
+            box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.300); }
+        .preview-getaway:hover { background-color: rgba(255, 255, 255, 0.050); }
+
+        .webpage { background: linear-gradient(to right, rgb(1, 21, 51) 0%, rgb(0, 0, 0) 75%);
+            border-radius: 0px 300px 0px 0px; padding: 40px 100px 40px 40px; display: flex;
+            justify-content: space-around;  align-items: flex-end; }
+        .def-text { margin: 10px; white-space:pre-line; }
+        .webpage-spr { margin: 10px; width: 300px; height: 300px; background: url('images/spr/webpage.png'); }
+
+        .expo { background: linear-gradient(to left, rgb(1, 21, 51) 0%, rgb(0, 0, 0) 75%); border-radius: 0px 0px 0px 300px;
+            padding: 40px 40px 40px 100px; display: flex; justify-content: space-around; align-items: flex-end; }
+        .expo-spr { margin: 10px; width: 200px; height: 200px; background: url('images/spr/expo.png'); }
+
+        .scan { background: linear-gradient(to right, rgb(1, 21, 51) 0%, rgb(0, 0, 0) 75%);
+            border-radius: 0px 300px 0px 0px; padding: 40px 100px 40px 40px; display: flex;
+            justify-content: space-around; align-items: flex-end; text-align: center; }
+        .scan-spr { margin: 10px; padding: 10px; width: 220px; height: 220px; background: url('images/spr/qr.png'); }
+        .scan-advert { display: flex; justify-content: space-evenly; margin: 20px; }
+        .scan-advert a { padding: 20px 30px 20px 30px; border-radius: 10px; color: black; font-weight: 900; }
+
+        @media only screen and (max-width:1250px) { .introd-spr { margin: 100px; } }
+        @media only screen and (max-width:1140px) { .scan { flex-direction: column; align-items: center; }
+            .media::before { content: "Tap"; } }
+        @media only screen and (max-width:1060px) { .webpage-spr { display: none; }
+            .webpage { background: linear-gradient(to bottom right, rgb(1, 21, 51) 0%, rgb(0, 0, 0) 100%); } }
+        @media only screen and (max-width:900px) { .introd-spr { margin: 50px; }
+            .expo { align-items: flex-start; background: linear-gradient(to bottom left, rgb(1, 21, 51) 0%, rgb(0, 0, 0) 50%); } }
+        @media only screen and (max-width:810px) {
+            .introd-spr { background: url('images/introdsml.png'); width: 600px; height: 225px; } }
+        @media only screen and (max-width:670px) { .expo-spr { display: none; }
+            .scan { background: linear-gradient(to bottom right, rgb(1, 21, 51) 0%, rgb(0, 0, 0) 75%); }
+            .scan-advert { flex-direction: column; } .scan-advert a { margin: 20px 0px 20px 0px; } }
+        @media only screen and (max-width: 600px) {
+            .introd-spr { margin: 10px; background: url('images/introdvsml.png'); width: 350px; height: 180px; }
+            .footer { flex-direction: column; white-space: normal; } .preview-getaway { margin: 0px; } }
+        @media only screen and (max-width:400px) { #hed { display: block; } .introd-spr { display: none; } }
+        @media only screen and (max-width: 350px) { .introduct-info { margin: 10px; padding: 20px; }  .introduct-brief { padding: 15px; } }
+    </style>
+</head>
+<body class="fader-anim">
+    <div class="navbar">
+        <h1 class="navbar-title" id="title"></h1>
+        <h4 class="navbar-snack"><a 
+            href="https://expo.dev" 
+            target="_blank" 
+            rel="norefferer"
+            style="text-decoration: none;"
+            >SNACK EXPO</a></h4>
+    </div>
+    <span class="scroller" id="scroll"></span>
+    <section class="introduct" id="top">
+        <div class="log" id="hed">
+            <h1>The Weekly Herald</h1>
+        </div>
+        <div class="introd-spr"></div>
+        <div class="warn">Website currently in build! Updates will be rolled out soon.</div>
+        <div class="introduct-info">
+            <h3>Hello! Thanks for visiting!</h3>
+            <p>Wait, wait! You've knocked the right door to view the app, but before you go
+                to view the app, it'll be better for you if you're guided well first. 
+            </p>
+            <p>If you don't want the guide, <a href="https://snack.expo.dev/@dakshdnaik/project-c59" target="_blank" rel="norefferer">you can view the app right away.</a></p>
+        </div>
+        <div class="introduct-brief reveal" >
+            <dl>
+                <dt>- What does it do?</dt>
+                <dd>Articles and some important information - updated weekly. For example, <strong>
+                Careers, Jokes, Facts and even Cyclone or severe weather alerts.</strong><dd>
+            </dl>
+            <dl>
+                <dt>- How fast is it to load up?</dt>
+                <dd>It's quicker to load than most projects you see in the community.<br>
+                Avoiding all those wacky-images and annoying sounds, keeping the code as dry as possible.</dd>
+            </dl>
+            <dl>
+                <dt>- What are the ways to access it?</dt>
+                <dd>There are <strong>3 different ways</strong> to access it. Read more below.</dd>
+            </dl>
+        </div>
+    </section>
+    <section class="webpage reveal">
+        <div class="def-text">
+            <h2>Webpage Preview</h2>
+            <p>Care about your CPU and bandwith usage? You can view this snack 
+                <strong>as an embeded preview</strong> on the webpage, saving a lot of CPU usage and bandwith.</p>
+            <a href="webpage.html" target="_blank">
+                <div class="preview-getaway">
+                    <p>Let's go!</p>
+                </div>
+            </a>
+        </div>
+        <div class="webpage-spr reveal"></div>
+    </section>
+    <section class="expo reveal">
+        <div class="expo-spr reveal"></div>
+        <div class="def-text">
+            <h2>Preview it on Snack Expo</h2>
+            <p>View the backstage, edit or download it.</p>
+            <a href="https://snack.expo.dev/@dakshdnaik/project-c59" target="_blank" rel="norefferer">
+                <div class="preview-getaway">
+                    <p>Let's go!</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="scan reveal">
+        <div class="def-text">
+            <h2>View it on your Phone!</h2>
+            <p>However, some stuff (design or elements) will get mis-placed and may not work as intended.</p>
+            <cite>(If your scanner doesn't like the code, increase your screen brightness; a scanner always scans the 
+                white spaces, not the black!)</cite>
+            <br><br>
+            <p>To view, download <strong>Expo Go!</strong></p>
+            <div class="scan-advert reveal">
+                <a 
+                    href="https://itunes.apple.com/app/apple-store/id982107779" 
+                    target="_blank" 
+                    rel="norefferer"
+                    style="background-color: white;"
+                    >Download on AppStore</a>
+                <a 
+                    href="https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www"
+                    target="_blank"
+                    rel="norefferer"
+                    style="background-color: greenyellow;"
+                    >Download on PlayStore</a>
+            </div>
+        </div>
+        <div class="scan-spr reveal"></div>
+    </section>  
+    <section class="footer">
+        <div class="credits reveal">
+            <h4>Credits</h4>
+            <p>Website and App, 
+                designed and developed by 
+                <a href="https://daksh-naik.github.io/Profile" target="_blank" rel="norefferer">Daksh Naik</a>
+            </p>
+            <p>Site hosted by 
+                <a href="https://github.com/" target="_blank" rel="norefferer">Github - Pages</a>
+            </p>
+            <p>App articles being updated
+                <strong>every week.</strong>
+            </p>
+            <p>Latest website update : 
+                <cite>10th Oct, 2021</cite>
+            </p>
+            <p>Latest App update : 
+                <cite>15th Oct, 2021</cite>
+            </p>
+        </div>
+        <div class="advert reveal">
+            <h4>Thanks</h4>
+            <p>App developed on : 
+                <a href="https://expo.dev" target="_blank" rel="norefferrer">Snack Expo</a>
+                <br>
+                online web-editor. 
+                React Native in your browser.
+                <br>
+                Download Expo Go on :
+            </p>
+            <a class="footer-advert"
+                    href="https://itunes.apple.com/app/apple-store/id982107779" 
+                    target="_blank" 
+                    rel="norefferer"
+                    style="background-color: white;"
+                >AppStore</a>
+            <br>
+            <a class="footer-advert 1"
+                    href="https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www"
+                    target="_blank"
+                    rel="norefferer"
+                    style="background-color: greenyellow;"
+                >PlayStore</a>
+            <br>
+            <p>Site hosted by 
+                <a href="https://github.com/" target="_blank" rel="norefferer">Github - Pages</a>
+            </p>
+            <br>
+            <p>WHTJR - Project 59</p>
+        </div>
+    </section>
+    <section style="text-align: center; padding: 40px; background-color: black;">
+        <p>&#120123; 2021 - Designed by <a href="https://daksh-naik.github.io/Profile" target="_blank" rel="norefferer">Daksh Naik</a></p>
+        <div class="log">
+            <h1>The Weekly Herald</h1>
+        </div>
+    </section>
+</body>
+    <script type="text/javascript">
+        window.onscroll = function() { shrink(defwidth); }
+        var titleTe = document.getElementById('title');
+        var defwidth = window.matchMedia("(max-width: 700px)");
+        var scrollselec = document.getElementById('scroll');
+        titleTe.title = "The Weekly Herald";
+        function shrink(defwidth) {
+            if (document.body.scrollTop > 80 && defwidth.matches || document.documentElement.scrollTop > 80 && defwidth.matches) {
+                titleTe.title = 'T W H';
+            } else {
+                titleTe.title = 'The Weekly Herald';
+            }
+        }
+        function initscroll() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 60) {
+                scrollselec.style.bottom = '20px';
+            } else {
+                scrollselec.style.bottom = '-50px';
+            }
+        }
+        scrollselec.onclick = () => {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        window.onscroll = () => { initscroll(); }
+        shrink(defwidth);
+    </script>
+    <script>
+        window.addEventListener('scroll', reveal);
+        var windowHeight = window.innerHeight;
+        var revealpoint = 40;
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+            for (var i=0; i < reveals.length; i++) {
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                if (revealtop < windowHeight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+            }
+        }
+    </script>
+</html>

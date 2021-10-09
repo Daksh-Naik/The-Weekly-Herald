@@ -47,7 +47,7 @@
     </div>
     <div 
     class="prev"
-    data-snack-id="@dakshdnaik/project-c59"
+    data-snack-id="@dakshdnaik/the-weekly-herald"
     data-snack-platform="web" 
     data-snack-preview="true" 
     data-snack-theme="dark" 
@@ -64,8 +64,8 @@
     <div class="introd">
         <a href="index.html" id="close">Close this tab to return back.</a>
     </div>
-    <section class="footer reveal">
-        <div class="credits">
+    <section class="footer">
+        <div class="credits reveal">
             <h4>Credits</h4>
             <p>Website and App, 
                 designed and developed by 
@@ -84,7 +84,7 @@
                 <cite>15th Oct, 2021</cite>
             </p>
         </div>
-        <div class="advert">
+        <div class="advert reveal">
             <h4>Thanks</h4>
             <p>App developed on : 
                 <a href="https://expo.dev" target="_blank" rel="norefferrer">Snack Expo</a>
@@ -92,22 +92,33 @@
                 online web-editor. 
                 React Native in your browser.
                 <br>
-                Download Expo Go on :
+                Download <strong>Expo Go</strong> on :
             </p>
-            <a class="footer-advert"
+            <a
                     href="https://itunes.apple.com/app/apple-store/id982107779" 
                     target="_blank" 
                     rel="norefferer"
-                    style="background-color: white;"
+                    class="aps"
                 >AppStore</a>
             <br>
-            <a class="footer-advert 1"
+            <a
                     href="https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www"
                     target="_blank"
                     rel="norefferer"
-                    style="background-color: greenyellow;"
+                    class="pls"
                 >PlayStore</a>
             <br>
+            <p>
+                Images and sprites created on 
+                <strong>MS Paint</strong>
+                with no actual copy from anything
+                on this planet.
+            </p>
+            <p>
+                Expo & Snack Expo Logo are
+                registered trademarks. I DO NOT 
+                own them.
+            </p>
             <p>Site hosted by 
                 <a href="https://github.com/" target="_blank" rel="norefferer">Github - Pages</a>
             </p>
@@ -159,9 +170,9 @@
         }
         function initscroll() {
             if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 60) {
-                scrollselec.style.display = "block";
+                scrollselec.style.right = '20px';
             } else {
-                scrollselec.style.display = "none";
+                scrollselec.style.right = '-50px';
             }
         }
         scrollselec.onclick = () => {

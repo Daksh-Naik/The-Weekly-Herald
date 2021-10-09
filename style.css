@@ -7,11 +7,16 @@ a:hover { color: rgb(255, 242, 167); text-decoration: none; }
 dl { margin: 40px 20px 40px 20px; } dt { margin: 0px 0px 20px 20px; font-size: 18px; font-weight: 900; }
 code { padding: 1px 3px 1px 3px; background-color: rgb(255, 242, 167); color: black; font-weight: bolder; border-radius: 1px; font-size: 15px; }
 code:hover { background-color: black; color: rgb(255, 242, 167) } #hed { display: none; }
-.scroller { z-index: 99; position: fixed; bottom: 0px; right: 0px; cursor: pointer; width: 45px; height: 30px; border-radius: 1px; background: url('images/spr/top.png'); bottom: -50px; right: 20px; transition: 0.5s ease;}
+.scroller { z-index: 99; position: fixed; bottom: 0px; right: 0px; cursor: pointer; width: 45px; height: 30px; border-radius: 1px; background: url('images/spr/top.png'); right: -50px; bottom: 20px; transition: 0.5s ease;}
+.scroller:hover { background: url('images/spr/toph.png'); }
 .reveal{position: relative; transform: translateY(100px); opacity: 0; transition: all 0.7s ease;}
 .reveal.active{ transform: translateY(0px); opacity: 1; }
 .log {  margin: 50px 20px 50px 20px; text-align: center; text-shadow: 5px 3px 3px rgba(0, 0, 0, 0.800); }
 .warn { display: none; margin: 20px 5px 20px 5px; color: lightcoral; }
+.aps { background-color: rgb(255, 255, 255); color: black; text-decoration: none; padding: 10px 20px 10px 20px; border-radius: 10px; }
+.aps:hover { color: white; background-color: black; }
+.pls { background-color: rgb(173, 255, 47); color: black; text-decoration: none; padding: 10px 20px 10px 20px; border-radius: 10px; }
+.pls:hover { color: rgb(173, 255, 47);  background-color: black; }
 .navbar { position: fixed; top: 0px; width:100%; background-color: rgba(2, 21, 51, 0.300); display: flex; justify-content: space-between; z-index: 99; }
 .navbar:hover { background-color: rgba(0, 0, 0, 0.500); }
 .navbar-title { padding: 20px 50px 20px 20px; left: 10px; background-color: rgba(0, 10, 29, 0.800); letter-spacing: 1px; width: fit-content;
